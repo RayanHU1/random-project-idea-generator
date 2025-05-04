@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>IdeaZap – Project Idea Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js"> </script>
+</head>
+<body>
+<div class="container">
+    <h1>💡 IdeaZap</h1>
+    <p>Get random coding project ideas based on your skill level and tech stack!</p>
+
+    <label for="difficulty">Select difficulty:</label>
+    <select id="difficulty">
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+    </select>
+
+    <label for="tech">Select tech stack:</label>
+    <select id="tech">
+        <option>HTML/CSS</option>
+        <option>JavaScript</option>
+        <option>Java</option>
+        <option>Python</option>
+    </select>
+
+    <button id="generateBtn">Generate Ideas</button>
+    <button id="surpriseBtn">Surprise Me</button>
+
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="theme-label">Dark Mode</span>
+    </div>
+
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
